@@ -18,7 +18,7 @@ public class FindSecondLargest {
 		
 		Arrays.sort(data);
 		
-		
+		System.out.print(data.length);
 		System.out.println(data[data.length-2]);
 		
 		// Print the second largest number	

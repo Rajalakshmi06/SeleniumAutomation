@@ -26,25 +26,31 @@ public class PrimeNumber {
 		int n=13;
 		
 		// Declare a boolean input as flag
-		
 		boolean flag=false;
+		int i;
+		
 
-		for(int i=2;i<=n/2;i++)
+		for(i=2;i<=n/2;i++)
 		{
 			
 			if(n%i==0)
 			{
 				flag=true;
+				System.out.println("Inside loop:"+n+ "   " +i + "  "+flag);
 				break;
+				
 			}
+			System.out.println("Outside loop:"+n+ "   " +i + "  "+flag);
 		}
-		if(!flag)
+		if(flag==false)
 		{
 			System.out.println(n+" is a Prime Number");
+			System.out.println("if loop:"+n+ "   " +i + "  "+flag);
 		}
 		else
 		{
 			System.out.println(n+" is not a Prime Number");
+			System.out.println(n+ "   " +i + "  "+flag);
 		}
 		// Iterate from 1 to half of the input
 		
